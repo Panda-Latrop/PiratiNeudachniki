@@ -1,0 +1,1531 @@
+fileFormatVersion: 2
+guid: 2dd727bdce10e834aa834c7799048efa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6816290279708046638
+    second: Chr_Pir_Run_0
+  - first:
+      213: 5702146808569674573
+    second: Chr_Pir_Run_1
+  - first:
+      213: -7643699847098565601
+    second: Chr_Pir_Run_2
+  - first:
+      213: 2055876053710808282
+    second: Chr_Pir_Run_3
+  - first:
+      213: 7767618641650993906
+    second: Chr_Pir_Run_4
+  - first:
+      213: 2043388439885539989
+    second: Chr_Pir_Run_5
+  - first:
+      213: -2342964544964716015
+    second: Chr_Pir_Run_6
+  - first:
+      213: -5988073136375274734
+    second: Chr_Pir_Run_7
+  - first:
+      213: 2661989021550017033
+    second: Chr_Pir_Run_8
+  - first:
+      213: 4819787964539208548
+    second: Chr_Pir_Run_9
+  - first:
+      213: 5029980819313369677
+    second: Chr_Pir_Run_10
+  - first:
+      213: -98527532432112039
+    second: Chr_Pir_Run_11
+  - first:
+      213: -4984372940450661579
+    second: Chr_Pir_Jmp_0
+  - first:
+      213: -4201502396884041444
+    second: Chr_Pir_Jmp_1
+  - first:
+      213: 4918817865543159739
+    second: Chr_Pir_Jmp_2
+  - first:
+      213: 2711223530888948107
+    second: Chr_Pir_Idl_0
+  - first:
+      213: 7625653684056103326
+    second: Chr_Pir_Fat_0
+  - first:
+      213: -3134525062592239035
+    second: Wpn_Char_Gun
+  - first:
+      213: -9124292117242396537
+    second: Wpn_Char_Icegun
+  - first:
+      213: -8466173627926887
+    second: Wpn_Char_Toxgun
+  - first:
+      213: 3823830636999221979
+    second: Wpn_Char_Gren
+  - first:
+      213: 7064071749125086360
+    second: Wpn_Char_Fire
+  - first:
+      213: 1647004540619542262
+    second: Wpn_Char_RPG
+  - first:
+      213: 4190350891835847518
+    second: Wpn_Char_Ukullele
+  - first:
+      213: -422663137652908714
+    second: Wpn_B_Gun
+  - first:
+      213: 4223849659078718530
+    second: Wpn_B_Ice
+  - first:
+      213: -2207025248662428096
+    second: Wpn_B_Tox
+  - first:
+      213: 4483060698808243146
+    second: Wpn_B_Gren
+  - first:
+      213: -6986077296479057010
+    second: Wpn_B_Rock
+  - first:
+      213: 3082686384856884738
+    second: Wpn_B_Plazma
+  - first:
+      213: 7200388537512427942
+    second: Eff_Gore_Pir_Blood_0
+  - first:
+      213: 89222450885218435
+    second: Eff_Gore_Pir_Gib_0
+  - first:
+      213: 812211831241073557
+    second: Eff_Gore_Pir_Gib_2
+  - first:
+      213: 1217378918152731863
+    second: Eff_Gore_Pir_Gib_1
+  - first:
+      213: 509492530706914117
+    second: Eff_Gore_Pir_Gib_3
+  - first:
+      213: 8791871627971955251
+    second: Eff_Gore_Pir_Gib_4
+  - first:
+      213: 2263799836454146191
+    second: Eff_Gore_Pir_Gib_5
+  - first:
+      213: 8459471449685308244
+    second: Eff_Gore_Pir_Gib_6
+  - first:
+      213: -6907067014945870274
+    second: Eff_Gore_Pir_Gib_7
+  - first:
+      213: -3239979535167650129
+    second: Eff_Gore_Pir_Gib_8
+  - first:
+      213: 1648731229499894146
+    second: Eff_Gore_Pir_Gib_9
+  - first:
+      213: 4694481085472837141
+    second: Eff_Gore_Pir_Gib_10
+  - first:
+      213: 1362963348426500555
+    second: Eff_Gore_Pir_Blood_1
+  - first:
+      213: 4334986843056198897
+    second: Eff_Gore_Pir_Blood_2
+  - first:
+      213: 3643996049624472459
+    second: Eff_Gore_Pir_Blood_3
+  - first:
+      213: 5022845066182144012
+    second: Eff_Gore_Pir_Blood_4
+  - first:
+      213: 5287538879540066927
+    second: Eff_Gore_Pir_Blood_5
+  - first:
+      213: -1327756549253929979
+    second: Eff_Gore_Pir_Blood_6
+  - first:
+      213: -7064205183137770983
+    second: Eff_Gore_Pir_Blood_7
+  - first:
+      213: 4910751194206422364
+    second: Eff_Gore_Pir_Blood_8
+  - first:
+      213: 4333376891284267738
+    second: Eff_Gore_Pir_Blood_9
+  - first:
+      213: 7324757739782042076
+    second: Eff_Gore_Pir_Blood_10
+  - first:
+      213: -3855706085160745423
+    second: Eff_Gore_Pir_Blood_11
+  - first:
+      213: 4706141593510122287
+    second: Eff_Gore_Pir_Blood_12
+  - first:
+      213: 4939427468749114989
+    second: Eff_Gore_Pir_Blood_13
+  - first:
+      213: -562506626656658382
+    second: Eff_Gore_Pir_Blood_14
+  - first:
+      213: 4724558907344901184
+    second: Eff_Gore_Pir_Blood_Big_0
+  - first:
+      213: -4310410050678277464
+    second: Eff_Gore_Pir_Blood_Big_1
+  - first:
+      213: 4022421301471482527
+    second: Eff_Gore_Pir_Blood_Big_2
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: 13
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chr_Pir_Run_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 224
+        width: 19
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a79e40df978ae14a8eff410ee9925a9
+      internalID: -6816290279708046638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 224
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.6428572, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d5dd78be6e3f6408a5d262aaaa9036
+      internalID: 5702146808569674573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 224
+        width: 13
+        height: 28
+      alignment: 9
+      pivot: {x: 0.6923077, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69cc55c97cb20f4196709e57496f83d
+      internalID: -7643699847098565601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 224
+        width: 14
+        height: 29
+      alignment: 9
+      pivot: {x: 0.6428572, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8706ff5806f28f742b26b88821c331e7
+      internalID: 2055876053710808282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 224
+        width: 16
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5625, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cf552df389ca4418a1284798851c69
+      internalID: 7767618641650993906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 224
+        width: 22
+        height: 31
+      alignment: 9
+      pivot: {x: 0.54545456, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eac4b39f8ef332439c9bc5c26e7debb
+      internalID: 2043388439885539989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_6
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 224
+        width: 21
+        height: 30
+      alignment: 9
+      pivot: {x: 0.52380955, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bbc5c4c45d3d84c9d73de71be89310
+      internalID: -2342964544964716015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 224
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.6428572, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99f45227bbeb214c83c369bff8304d8
+      internalID: -5988073136375274734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_8
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 224
+        width: 13
+        height: 28
+      alignment: 9
+      pivot: {x: 0.6923077, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f67b6514dfd26408252f94af71ae76
+      internalID: 2661989021550017033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 224
+        width: 14
+        height: 28
+      alignment: 9
+      pivot: {x: 0.6428572, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d15b9b45532f043986bbe0ea71a268
+      internalID: 4819787964539208548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_10
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 224
+        width: 16
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5625, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3063f45e0043a5b40b89a98afcc5844d
+      internalID: 5029980819313369677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Run_11
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 224
+        width: 22
+        height: 31
+      alignment: 9
+      pivot: {x: 0.54545456, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0862c5b818c045549a81e9ec34bf84f8
+      internalID: -98527532432112039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Jmp_0
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 224
+        width: 13
+        height: 28
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b56cc47986323449a4f946a0490831
+      internalID: -4984372940450661579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Jmp_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 223
+        width: 18
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5555556, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b6ac82e5102794d9868a26a808c175
+      internalID: -4201502396884041444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Jmp_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 22
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfef7f68ec60a6f4183d8982f8512f97
+      internalID: 4918817865543159739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Idl_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 192
+        width: 14
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53b33dddd8e0114a99fcb6ba181a0dc
+      internalID: 2711223530888948107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Pir_Fat_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 204
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5294118, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eec2e17dc2a03544b7c94b5f92d9f91
+      internalID: 7625653684056103326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_Gun
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 212
+        width: 22
+        height: 4
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e83dda054de3b4b9c0dde51d672cd6
+      internalID: -3134525062592239035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_Icegun
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 210
+        width: 22
+        height: 6
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.8333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6805a1708532d7545bb1d0f3b914eb5f
+      internalID: -9124292117242396537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_Toxgun
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 212
+        width: 22
+        height: 5
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8a022b531e8fe4bba893fd62b9a80d
+      internalID: -8466173627926887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_Gren
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 210
+        width: 22
+        height: 7
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.71428573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ce8144eb8dbc547b76eac8c1ad5cb1
+      internalID: 3823830636999221979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_Fire
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 207
+        width: 28
+        height: 9
+      alignment: 9
+      pivot: {x: 0.071428575, y: 0.8888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d121bf139674c14eae1bbe467886795
+      internalID: 7064071749125086360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_RPG
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 209
+        width: 27
+        height: 13
+      alignment: 9
+      pivot: {x: 0.25925925, y: 0.4615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aeede3ff62255343aed1086872f850e
+      internalID: 1647004540619542262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_Ukullele
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 209
+        width: 21
+        height: 11
+      alignment: 9
+      pivot: {x: 0.0952381, y: 0.54545456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e535cb67fc3c73643a23ecae15334f2a
+      internalID: 4190350891835847518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_B_Gun
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 199
+        width: 16
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3c9d8fa7fa5954dbcd02b06756e54b
+      internalID: -422663137652908714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_B_Ice
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 199
+        width: 16
+        height: 5
+      alignment: 9
+      pivot: {x: 0.4375, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766e710c7392e2e4a94769fe7a3e5944
+      internalID: 4223849659078718530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_B_Tox
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 199
+        width: 12
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3109196109ddcd48b20dbefe3ce923c
+      internalID: -2207025248662428096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_B_Gren
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 199
+        width: 9
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5555556, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2045d5ac3b1a0d47b9ece0cb57c9e0b
+      internalID: 4483060698808243146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_B_Rock
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 199
+        width: 21
+        height: 7
+      alignment: 9
+      pivot: {x: 0.61904764, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0b959ed26b1824b8a69da97fd7335c
+      internalID: -6986077296479057010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_B_Plazma
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 199
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba064eb461d450b46aaac09213f8c7a0
+      internalID: 3082686384856884738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_0
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 249
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88861dd020251e740b2ba3b8121f3c26
+      internalID: 7200388537512427942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_0
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 251
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51ed5e6909c33d4093de9775ff3ad61
+      internalID: 89222450885218435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_2
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 244
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5270280d757b214c85b73b65164c81c
+      internalID: 812211831241073557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 244
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e435faa29500ee4b98ee4841fc76583
+      internalID: 1217378918152731863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 239
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccac623e84de9764fa28a6e6a817a6b5
+      internalID: 509492530706914117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 234
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b101309f632509c4baed44f477c446b8
+      internalID: 8791871627971955251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 228
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c933e54052944644add0534aeec8ccc
+      internalID: 2263799836454146191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_6
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 222
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9c40e85f6d80a4e8c8c46718cd2639
+      internalID: 8459471449685308244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 215
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26593d609c32a741b398d7dab207ca3
+      internalID: -6907067014945870274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_8
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 215
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827f61cdc2161ca428b3d342729234ec
+      internalID: -3239979535167650129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_9
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 206
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b637b0c48d8544bab5849b91c244d4
+      internalID: 1648731229499894146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Gib_10
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 210
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411376f720b2aec4d90838cf764b6e48
+      internalID: 4694481085472837141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 199
+        width: 9
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5555556, y: 0.42857146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c63af9bb425c54cacf3f0de7fc1cad
+      internalID: 1362963348426500555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 199
+        width: 9
+        height: 7
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.42857146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51bacd7ed0f6b14ba5461b3f13f1fc4
+      internalID: 4334986843056198897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 199
+        width: 7
+        height: 7
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abff49e0555d11a45bc0ea72fdad1ba8
+      internalID: 3643996049624472459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 199
+        width: 6
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42857146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d79c059b5d30a48ac0001a83511807
+      internalID: 5022845066182144012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 199
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f98a614b9fd2441b91e86ba40b3c70
+      internalID: 5287538879540066927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_6
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 199
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc19b569c44efbd4ea6f76056575e1e8
+      internalID: -1327756549253929979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_7
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 199
+        width: 7
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db58a7bf08bb4c34aa69df55a71e139c
+      internalID: -7064205183137770983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_8
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 199
+        width: 4
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89372b8f44f7c7240a522a895d04064f
+      internalID: 4910751194206422364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 199
+        width: 5
+        height: 5
+      alignment: 9
+      pivot: {x: 0.6, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44cadae5e7ab3d4abb87f9f191a95c0
+      internalID: 4333376891284267738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_10
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 199
+        width: 4
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5687350597148244e85c5753bb05d151
+      internalID: 7324757739782042076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_11
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 199
+        width: 5
+        height: 5
+      alignment: 9
+      pivot: {x: 0.4, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ff70d3d1c2dfb42b5bcbd318a5745e
+      internalID: -3855706085160745423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 199
+        width: 4
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bb8761d417eb94289e2bff3f1f91ef
+      internalID: 4706141593510122287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_13
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 199
+        width: 3
+        height: 4
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec89d87eae91434fa75e17b14a0dcbc
+      internalID: 4939427468749114989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_14
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 199
+        width: 4
+        height: 3
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f416a2e487965234d9fc6aa2ed85f4e1
+      internalID: -562506626656658382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_Big_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 167
+        width: 29
+        height: 26
+      alignment: 9
+      pivot: {x: 0.4827586, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e7dc95a07b9f344a51dd1d16c8ec2a
+      internalID: 4724558907344901184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_Big_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 167
+        width: 25
+        height: 29
+      alignment: 9
+      pivot: {x: 0.48, y: 0.4827586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8140326f71f3d4194f48ecfcef60c8
+      internalID: -4310410050678277464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Gore_Pir_Blood_Big_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 167
+        width: 30
+        height: 31
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0.48387095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29aeeb89cb09184c91e34b1ff82b4e2
+      internalID: 4022421301471482527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

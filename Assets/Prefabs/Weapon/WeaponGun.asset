@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b3ce4e55d74ff4bb64765fbf773e24, type: 3}
+  m_Name: WeaponGun
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 2875195067712546088, guid: 410d90c2fa13ad64da4e6eea3851ed6f, type: 3}
+  damageType: 0
+  damage: 10
+  power: 25
+  fireRate: 10
+  spread: 5
+  shootPoint: {x: 0.9, y: 0, z: 0}
