@@ -22,6 +22,7 @@ public class DamageDealer : IDamageDealer
         damageableTag
     }
     protected TeamEnum team;
+    protected bool instKill = false;
     protected float damage;
     protected DamageType type;
     [SerializeField]
@@ -32,6 +33,10 @@ public class DamageDealer : IDamageDealer
     public TeamEnum Team { get => team; set => team = value; }
     public float Damage { get => damage; set => damage = value; }
     public DamageType Type { get => type; set => type = value; }
+    public void SetInstantlyKill(bool _instantly)
+    {
+        instKill = _instantly;
+    }
     public HurtReturn HurtHandler(Collider2D _target)
     {
 
@@ -46,7 +51,7 @@ public class DamageDealer : IDamageDealer
                     IDamageable damageable = _target.GetComponent<IDamageableHandler>().Damageable;
                     if (damageable.Team == team)
                         return HurtReturn.miss;
-                    if (damageable.Hurt(new DamageInfo(damage, type)))
+                    if (damageable.Hurt(new DamageInfo(instKill ? damageable.MaxHealth : damage, type)))
                         return HurtReturn.kill;
                     else
                         return HurtReturn.enemy;

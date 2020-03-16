@@ -22,7 +22,6 @@ public interface IGroupMaster
     void StopRotationGroup();
     void ShootGroup(int _id);
     void ShootGroup();
-    void UpdateGroup(int _id);
     void UpdateGroup();
 }
 public class GroupMaster : MonoBehaviour, IGroupMaster
@@ -38,20 +37,19 @@ public class GroupMaster : MonoBehaviour, IGroupMaster
     [SerializeField]
     protected int pirateCount = 1;
     protected List<IPoolPirate> pirates;
-    protected int currentCount;
 
 
     public void SpawnGroup(Vector2 _position)
     {
         IPoolPirate pirate = null;
-        if (currentCount == 0)
+        if ( pirates.Count == 0)
         {
             if (SpawnUnit(_position, ref pirate))
                 pirate.SetAIActive(false);
             else
                 return;
         }
-        for (int i = currentCount; i <= pirateCount; i++)
+        for (int i =  pirates.Count; i <= pirateCount; i++)
         {
             if (SpawnUnit(_position, ref pirate))
             {
@@ -65,7 +63,7 @@ public class GroupMaster : MonoBehaviour, IGroupMaster
 
     public bool SpawnUnit(Vector2 _position, ref IPoolPirate _pirate)
     {
-        if(currentCount <= pirateCount)
+        if( pirates.Count <= pirateCount)
         {
             PoolPopInfo ppi;
             _pirate = (UnityPoolManager.Instance.Pop(pirateTag, out ppi) as IPoolPirate);
@@ -81,38 +79,37 @@ public class GroupMaster : MonoBehaviour, IGroupMaster
             _pirate.AddTimeToShoot(0.0f,parameter.timeToShootSpread);
             _pirate.AddPadding(0.0f, parameter.paddingSpread);
             pirates.Add(_pirate);
-            currentCount++;
             return true;
         }
         return false;
     }
     public void MoveGroup(float _direction, int _id)
     {
-        if (currentCount != 0)
+        if ( pirates.Count != 0)
             pirates[_id].SetMove(_direction);
     }
     public void MoveGroup(float _direction)
     {
-        for (int i = 0; i < currentCount; i++)
+        for (int i = 0; i <  pirates.Count; i++)
         {
             pirates[i].SetMove(_direction);
         }
     }
     public void JumpGroup(float _direction, int _id)
     {
-        if (currentCount != 0)
+        if ( pirates.Count != 0)
             pirates[_id].SetJump(_direction);
     }
     public void JumpGroup(float _direction)
     {
-        for (int i = 0; i < currentCount; i++)
+        for (int i = 0; i <  pirates.Count; i++)
         {
             pirates[i].SetJump(_direction);
         }
     }
     public void RotationGroup(float _angle, Quaternion _quaternion, int _id)
     {
-        if (currentCount != 0)
+        if ( pirates.Count != 0)
         {
             pirates[_id].SetCanRotation(true);
             pirates[_id].SetRotation(_angle, _quaternion);
@@ -120,7 +117,7 @@ public class GroupMaster : MonoBehaviour, IGroupMaster
     }
     public void RotationGroup(float _angle, Quaternion _quaternion)
     {
-        for (int i = 0; i < currentCount; i++)
+        for (int i = 0; i <  pirates.Count; i++)
         {
             pirates[i].SetCanRotation(true);
             pirates[i].SetRotation(_angle, _quaternion);
@@ -128,75 +125,77 @@ public class GroupMaster : MonoBehaviour, IGroupMaster
     }
     public void StopRotationGroup(int _id)
     {
-        if (currentCount != 0)
+        if ( pirates.Count != 0)
         {
             pirates[_id].SetCanRotation(false);
         }
     }
     public void StopRotationGroup()
     {
-        for (int i = 0; i < currentCount; i++)
+        for (int i = 0; i <  pirates.Count; i++)
         {
             pirates[i].SetCanRotation(false);
         }
     }
     public void ShootGroup(int _id)
     {
-        if (currentCount != 0)
+        if ( pirates.Count != 0)
         {
             pirates[_id].Shoot();
         }
     }
     public void ShootGroup()
     {
-        for (int i = 0; i < currentCount; i++)
+        for (int i = 0; i <  pirates.Count; i++)
         {
             pirates[i].Shoot();
         }
     }
-    public void UpdateGroup(int _id)
-    {
-        if (!pirates[_id].IsAlive)
-        {
-            pirates.RemoveAt(_id);
-            if (_id == 0)
-            {
-                pirates[_id].SetAIActive(false);
-            }
-            else
-            {               
-                pirates[_id].SetTarget(pirates[_id - 1].GetTransform());
-            }
-            currentCount--;
-        }
-    }
+
     public void UpdateGroup()
     {
-        for (int i = 0; i < currentCount; i++)
+        for (int i = 0; i <  pirates.Count; i++)
         {
             if (!pirates[i].IsAlive)
             {
-                pirates.RemoveAt(i);
-                if (i == 0)
-                {
-                    pirates[i].SetAIActive(false);
-                }
-                else
-                {
-                    pirates[i].SetTarget(pirates[i - 1].GetTransform());
-                }
-                currentCount--;
-                //i--;
+                if (!OnPirateDeath(i))
+                    return;
+                i--;
             }
         }
     }
+    protected bool OnPirateDeath(int _id)
+    {
+        pirates.RemoveAt(_id);
 
+        if (pirates.Count == 0)
+        {
+            Debug.Log("All Die");
+            return false;
+        }
+        if (pirates.Count == 1)
+        {
+            pirates[0].SetAIActive(false);
+            return true;
+        }
+        if (_id == 0)
+        {
+            pirates[0].SetAIActive(false);
+            return true;
+        }
+        if (_id >= pirates.Count)
+        {
+            return true;
+        }
+
+        pirates[_id].SetTarget(pirates[_id - 1].GetTransform());
+        return true;
+    }
 
     #region Mono
     protected void Awake()
     {
         pirates = new List<IPoolPirate>(pirateCount);
-        currentCount = 0;
     }
     protected void Start()
     {

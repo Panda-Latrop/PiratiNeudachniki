@@ -341,7 +341,7 @@ MonoBehaviour:
   damageable:
     isAlive: 1
     maxHealth: 100
-    team: 0
+    team: 1
     resists: []
   movement:
     rigidbody2d: {fileID: 8725323561833481507}

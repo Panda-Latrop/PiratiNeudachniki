@@ -12,7 +12,7 @@ public class GroupController : MonoBehaviour
     [SerializeField]
     protected GroupMaster group;
 
-    protected void Update()
+    protected void LateUpdate()
     {
         if (isActive)
         {

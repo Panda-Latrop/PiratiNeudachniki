@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+public enum TrapType
+{
+    squeezer
+}
 public interface ITrap
 {
     bool IsActive { get; set; }
+    TrapType Type { get; }
     Vector2 GetPosition();
     void SetPosition(Vector2 _position);
     float GetRotation();
@@ -17,11 +22,14 @@ public interface ITrap
 public abstract class BaseTrap : MonoBehaviour, ITrap
 {
 
-    protected bool isActive;
+    protected bool isActive = true;
+    [SerializeField]
+    protected TrapType type;
     [SerializeField]
     protected Rigidbody2D rig;
 
     public virtual bool IsActive { get => isActive; set { isActive = enabled = value; } }
+    public TrapType Type => type;
     public virtual Vector2 GetPosition()
     {
        return rig.position;
