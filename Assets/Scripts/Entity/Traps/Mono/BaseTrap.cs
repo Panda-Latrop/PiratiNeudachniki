@@ -5,7 +5,8 @@ using UnityEngine;
 
 public enum TrapType
 {
-    squeezer
+    squeezer,
+    bob,
 }
 public interface ITrap
 {

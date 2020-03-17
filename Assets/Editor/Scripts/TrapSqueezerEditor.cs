@@ -9,20 +9,23 @@ public class TrapSqueezerEditor : Editor
 
         base.OnInspectorGUI();
         TrapSqueezer squeezer = target as TrapSqueezer;
-        EditorGUILayout.Space();
-        GUILayout.Label("Squeezer Editor", GUI.skin.textArea);
-        EditorGUILayout.Space();
-
-        float promotion = EditorGUILayout.Slider("Promotion", CalculatePromotion(squeezer), 0.0f, 1.0f);
-        Mathf.Clamp(promotion, 0.0f, 1.0f);
-        CalculatePosition(squeezer, promotion);
-
-        squeezer.Design.SetDesign(EditorGUILayout.ObjectField("Design", squeezer.Design.GetDesign(), typeof(ScriptableSqueezerDesign), true) as ScriptableSqueezerDesign);
-        if (squeezer.Design.GetDesign() != null && squeezer.Design.GetDesign().GetSizeCount() > 0)
+        if (squeezer.enabled == true && !Application.isPlaying)
         {
+            EditorGUILayout.Space();
+            GUILayout.Label("Squeezer Editor", GUI.skin.textArea);
+            EditorGUILayout.Space();
 
-            squeezer.Design.Size = EditorGUILayout.IntSlider("Size", squeezer.Design.Size, 0, squeezer.Design.GetDesign().GetSizeCount()-1);
-            squeezer.Design.AppyDesign();
+            float promotion = EditorGUILayout.Slider("Promotion", CalculatePromotion(squeezer), 0.0f, 1.0f);
+            Mathf.Clamp(promotion, 0.0f, 1.0f);
+            CalculatePosition(squeezer, promotion);
+
+            squeezer.Design.SetDesign(EditorGUILayout.ObjectField("Design", squeezer.Design.GetDesign(), typeof(ScriptableSqueezerDesign), true) as ScriptableSqueezerDesign);
+            if (squeezer.Design.GetDesign() != null && squeezer.Design.GetDesign().GetSizeCount() > 0)
+            {
+
+                squeezer.Design.Size = EditorGUILayout.IntSlider("Size", squeezer.Design.Size, 0, squeezer.Design.GetDesign().GetSizeCount() - 1);
+                squeezer.Design.AppyDesign();
+            }
         }
     }
     protected void CalculatePosition(TrapSqueezer _squeezer, float _promotion)
@@ -57,10 +60,10 @@ public class TrapSqueezerEditor : Editor
     }
     protected virtual void OnSceneGUI()
     {
-        if (!Application.isPlaying)
+        TrapSqueezer squeezer = target as TrapSqueezer;
+        if (squeezer.enabled == true && !Application.isPlaying)
         {
-            TrapSqueezer squeezer = target as TrapSqueezer;
-
+          
             EditorGUI.BeginChangeCheck();
             {
                 //float size = HandleUtility.GetHandleSize(squeezer.GetPosition() + squeezer.Movement.EndPoint) ;

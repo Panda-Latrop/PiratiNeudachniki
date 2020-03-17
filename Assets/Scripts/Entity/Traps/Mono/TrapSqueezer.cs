@@ -218,7 +218,7 @@ public class SqueezerAnimation : ISqueezerAnimation
     }
     public void OnLateUpdate()
     {
-        SetSize(press.localPosition.y);
+        SetSize(-press.localPosition.y);
     }
 }
 public interface ISqueezerDesign
@@ -232,7 +232,7 @@ public interface ISqueezerDesign
 public class SqueezerDesign : ISqueezerDesign
 {
     [SerializeField]
-    protected int size = 1;
+    protected int size = 0;
     [SerializeField]
     protected SpriteRenderer beam, stick, press;
     [SerializeField]
