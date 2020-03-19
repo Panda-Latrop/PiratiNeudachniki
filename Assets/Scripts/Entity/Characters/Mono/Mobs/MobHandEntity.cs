@@ -2,35 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PirateEntity : MonoBehaviour, IPirateCharacter
+public class MobHandEntity : MonoBehaviour, IMoveCharacter
 {
     [SerializeField]
     protected DamageableCharacter damageable;
     [SerializeField]
-    protected JumpAccelMovement movement;
+    protected ForceMovement movement;
     [SerializeField]
-    protected PirateRotation rotation;
-    [SerializeField]
-    protected PirateDesign design;
+    protected MobHandDesign design;
     [SerializeField]
     protected ParticleDeath death;
     [SerializeField]
-    protected PirateFlip flip;
+    protected BodyFlip flip;
     [SerializeField]
-    protected MoveJumpAnimation anim;
-    [SerializeField]
-    protected Shooter shooter;
+    protected MoveAnimation anim;
 
     public IDamageable Damageable => damageable;
     public IMovement Movement => movement;
-    public IRotation Rotation => rotation;
-    public IShooter Shooter => shooter;
 
-   protected  void OnDeath(DamageInfo _deathInfo)
+    protected void OnDeath(DamageInfo _deathInfo)
     {
         movement.IsCanMove = false;
-        rotation.IsCanRotation = false;
-        shooter.IsCanShoot = false;
         movement.StopMovement();
         death.Death(_deathInfo);
         enabled = false;
@@ -38,38 +30,29 @@ public class PirateEntity : MonoBehaviour, IPirateCharacter
     protected void OnRevive()
     {
         movement.IsCanMove = true;
-        rotation.IsCanRotation = true;
-        shooter.IsCanShoot = true;
         death.Revive();
         enabled = true;
     }
+
     #region Mono 
     protected void Awake()
     {
         damageable.SetDeathHandler(OnDeath);
         damageable.SetReviveHandler(OnRevive);
         death.Initialize(design);
-        flip.Initialize();
         anim.Initialize(movement);
-        shooter.Initialize(damageable);
-    }
-    protected void Start()
-    {
-        rotation.IsCanRotation = false;
     }
     #region Update 
     protected void Update()
     {
         FlipChecker.Check(flip, movement.GetConstant());
-        if (!rotation.IsCanRotation)
-            rotation.SetDefaultRotation(flip.IsFlipped);
     }
     protected void FixedUpdate()
     {
-        movement.FixedUpdate();       
+        movement.FixedUpdate();
     }
     protected void LateUpdate()
-    {     
+    {
         anim.LateUpdate();
     }
     #endregion

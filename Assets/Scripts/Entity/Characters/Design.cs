@@ -2,15 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IPirateDesign
+public interface ICharacterDesign
 {
+    
     void SetEnable(bool _enable);
-    void SetArmSprite(Sprite _sprite);
-    void SetBodyFlipX(bool _flip);
-    void SetArmFlipY(bool _flip);
+}
+
+[System.Serializable]
+public class MobBodyDesign : ICharacterDesign
+{
+    [SerializeField]
+    protected Animator animator;
+    [SerializeField]
+    protected SpriteRenderer bodyS;
+    [SerializeField]
+    protected Rigidbody2D rigidbody;
+
+    public void SetEnable(bool _enable)
+    {
+        animator.enabled = bodyS.enabled = rigidbody.simulated = _enable;
+        animator.
+    }
+    public void SetBodyFlipX(bool _flip)
+    {
+        bodyS.flipX = _flip;
+    }
 }
 [System.Serializable]
-public class PirateDesign : IPirateDesign
+public class PirateDesign : ICharacterDesign
 {
     [SerializeField]
     protected Animator animator;
@@ -18,8 +37,6 @@ public class PirateDesign : IPirateDesign
     protected SpriteRenderer bodyS, armS;
     [SerializeField]
     protected Rigidbody2D rigidbody;
-    [SerializeField]
-    protected CapsuleCollider2D collider;
 
     public void SetEnable(bool _enable)
     {

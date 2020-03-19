@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 8c811ac128c29784a960adfd23f65a31
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3511169665744994149
+    second: Chr_HandLess_Idle_0
+  - first:
+      213: -3517657507584217966
+    second: Chr_Hand_Idle_0
+  - first:
+      213: 1957392019580403569
+    second: Chr_Hand_Run_0
+  - first:
+      213: 7958057286671060088
+    second: Chr_Hand_Run_1
+  - first:
+      213: -7070214647046897349
+    second: Chr_Hand_Run_2
+  - first:
+      213: 9182711637040726963
+    second: Chr_Hand_Run_3
+  - first:
+      213: 4756701485509723107
+    second: Chr_Hand_Run_4
+  - first:
+      213: 5704213980382404204
+    second: Chr_Hand_Run_5
+  - first:
+      213: -602329243859445756
+    second: Chr_Hand_Run_6
+  - first:
+      213: -5709190075459589493
+    second: Chr_Hand_Run_7
+  - first:
+      213: -3511169665744994149
+    second: Wpn_Char_SmallGun
+  - first:
+      213: 5932916557384926822
+    second: Wpn_Char_MiddleGun
+  - first:
+      213: 8988401751243881349
+    second: Wpn_Char_BigGun
+  - first:
+      213: -3511169665744994149
+    second: Wpn_B_Mine_0
+  - first:
+      213: -7552873613227401449
+    second: Wpn_B_Mine_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +141,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Chr_HandLess_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 478
+        width: 20
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d485131db88925548b86008a3ea7e4ae
+      internalID: -3511169665744994149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 478
+        width: 30
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573ca47dd2bd2ba41987e494ef6836f7
+      internalID: -3517657507584217966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Run_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 478
+        width: 30
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c255474215f16438418914cd3a0ee7
+      internalID: 1957392019580403569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Run_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 478
+        width: 30
+        height: 33
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee86b4a3deee4204ba61fe2e0389f41c
+      internalID: 7958057286671060088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Run_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 478
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6681caec58f124ea8e58f12c3376c1
+      internalID: -7070214647046897349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Run_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 478
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3135100f753e77459eb5bf0a85436ad
+      internalID: 9182711637040726963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Run_4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 478
+        width: 30
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328058d0b6a70df4d9ce1de47b7315ee
+      internalID: 4756701485509723107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Run_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 478
+        width: 30
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063d99053591d394fba3fe48a84276e3
+      internalID: 5704213980382404204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Run_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 478
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4666667, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8affc37e26a27ff40901c1a2593de7d1
+      internalID: -602329243859445756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Hand_Run_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 478
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c49d62a1c6c254aa37799674045f9f
+      internalID: -5709190075459589493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_SmallGun
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 466
+        width: 25
+        height: 11
+      alignment: 9
+      pivot: {x: 0.48, y: 0.45454547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f71b28691f492c4cb8f2e1dd7414127
+      internalID: -3511169665744994149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_MiddleGun
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 455
+        width: 31
+        height: 22
+      alignment: 9
+      pivot: {x: 0.19354838, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e343a47bd2ed0499c89e6fee283f9f
+      internalID: 5932916557384926822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_Char_BigGun
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 451
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.21621622, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4385c948bd1a8d04693b543da2a357a0
+      internalID: 8988401751243881349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_B_Mine_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 465
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a14fccaad4eff2498a28e4e86e301d1
+      internalID: -3511169665744994149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wpn_B_Mine_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 465
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e19f39c663a1847a8624512bec9e63
+      internalID: -7552873613227401449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

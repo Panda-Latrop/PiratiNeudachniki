@@ -12,11 +12,11 @@ public abstract class AnimationController : IAnimationController
     public Animator Animator => animator;
     public abstract void LateUpdate();
 }
+
 [System.Serializable]
-public class PirateAnimation : AnimationController
+public class MoveAnimation : AnimationController
 {
     protected bool isRun;
-    protected int yDir;
     protected IMovement movement;
     public void Initialize(IMovement _movement)
     {
@@ -24,36 +24,46 @@ public class PirateAnimation : AnimationController
     }
     public override void LateUpdate()
     {
-        Vector2 move;
-        move.x = movement.GetConstant().x;
-        move.y = movement.GetVelocity().y;
-        if (move.x != 0 && !isRun)
+        float move;
+        move = movement.GetVelocity().x;
+        if (move != 0 && !isRun)
         {
             animator.SetBool("Run", true);
             isRun = true;
         }
-        if (move.x == 0 && isRun)
+        if (move == 0 && isRun)
         {
             animator.SetBool("Run", false);
             isRun = false;
-        }
+        }       
+    }
+}
 
+    [System.Serializable]
+public class MoveJumpAnimation : MoveAnimation
+{
+    protected int yDir;
+    public override void LateUpdate()
+    {
 
-        if ((move.y == 0 || movement.IsGrounded()) && yDir != 0)
+        base.LateUpdate();
+        float moveY = movement.GetVelocity().y;
+
+        if ((moveY == 0 || movement.IsGrounded()) && yDir != 0)
         {
             yDir = 0;
             animator.SetInteger("YDir", yDir);
         }
         else
         {
-            if (move.y > 0 && yDir != 1)
+            if (moveY > 0 && yDir != 1)
             {
                 yDir = 1;
                 animator.SetInteger("YDir", yDir);
             }
             else
             {
-                if (move.y < 0 && yDir != -1)
+                if (moveY < 0 && yDir != -1)
                 {
                     yDir = -1;
                     animator.SetInteger("YDir", yDir);

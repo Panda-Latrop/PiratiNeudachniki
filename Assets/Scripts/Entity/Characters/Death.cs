@@ -12,13 +12,13 @@ public abstract class DeathHandler : IDeathHandler
     public abstract void Death(DamageInfo _damageInfo);
     public abstract void Revive();
 }
-[System.Serializable]
-public class PirateDeath : DeathHandler
+
+public class ParticleDeath : DeathHandler
 {
-    protected IPirateDesign design;
+    protected ICharacterDesign design;
     [SerializeField]
     protected ParticleSystem particle;
-    public void Initialize(IPirateDesign _design)
+    public void Initialize(ICharacterDesign _design)
     {
         design = _design;
     }
