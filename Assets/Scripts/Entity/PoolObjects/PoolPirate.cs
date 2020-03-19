@@ -6,6 +6,7 @@ public interface IPoolPirate : IPoolObject
 {
 
     bool IsAlive { get; }
+    void Revive();
     void SetMove(float _direction);
     void SetJump(float _direction);
     void AddJumpSpeed(float _min, float _max);
@@ -31,17 +32,22 @@ public class PoolPirate : PoolObject, IPoolPirate
     protected PirateEntity pirate;
     [SerializeField]
     protected PirateAI pirateAI;
+    [SerializeField]
+    protected CharacterLifeCycle lifeCycle;
     protected float jumpCashe, paddingCashe, timeToShootCashe;
     protected IGroupMaster master;
 
-    public void Awake()
+    #region Pool Methods
+    public override void OnPop()
     {
-        jumpCashe = pirate.Movement.JumpSpeed;
-        paddingCashe = pirateAI.Follow.Padding;
-        pirate.Damageable.SetDeathHandler(OnPirateDeath);
+        base.OnPop();
+        enabled = false;
     }
-
     public bool IsAlive => pirate.Damageable.IsAlive;
+    public void Revive()
+    {
+        pirate.Damageable.Revive();
+    }
     public void SetMove(float _direction)
     {
         pirate.Movement.Move(_direction);
@@ -102,8 +108,28 @@ public class PoolPirate : PoolObject, IPoolPirate
     protected void OnPirateDeath(DamageInfo _damageInfo)
     {
         master.UpdateGroup();
+        lifeCycle.Restart();
+        enabled = true;
     }
 
     //public PirateEntity Entity => pirate;
     //public PirateAI EntityAI => pirateAI;
+#endregion
+    #region Mono
+    public void Awake()
+    {
+        jumpCashe = pirate.Movement.JumpSpeed;
+        paddingCashe = pirateAI.Follow.Padding;
+        pirate.Damageable.SetDeathHandler(OnPirateDeath);
+    }
+    
+    public void Update()
+    {
+        if (lifeCycle.IsActive && lifeCycle.UpdateCycle())
+        {
+            Push();
+            enabled = false;
+        }
+    }
+    #endregion
 }

@@ -55,7 +55,7 @@ public class Shooter : IShooter
             bullet.SetPosition(shootPoint.position);
             bullet.SetRotation(angle);
             bullet.SetBullet(owner.Team, weapon.damage, weapon.damageType);
-            bullet.SetDirection(angle * Vector2.right, weapon.power);
+            bullet.SetDirection(angle * Vector2.right, weapon.power);           
             nextShoot = Time.time + weapon.timeToShoot;
         }
     }

@@ -224,6 +224,7 @@ public class SqueezerAnimation : ISqueezerAnimation
 public interface ISqueezerDesign
 {
     int Size { get ; set ; }
+    Vector2 GetPressSize();
     void SetDesign(ScriptableSqueezerDesign _design);
     ScriptableSqueezerDesign GetDesign();
     void AppyDesign();
@@ -241,6 +242,10 @@ public class SqueezerDesign : ISqueezerDesign
     protected ScriptableSqueezerDesign design;
 
     public int Size { get => size; set => size = value; }
+    public Vector2 GetPressSize()
+    {
+        return pressCollider.size;
+    }
     public void SetDesign(ScriptableSqueezerDesign _design)
     {     
         design = _design;      

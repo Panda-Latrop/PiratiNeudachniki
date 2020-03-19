@@ -70,9 +70,9 @@ internal class UnityPoolManager : DestroyableSingleton<UnityPoolManager>
     {
         if (pools.ContainsKey(_poolObject.PoolTag))
         {
-            _poolObject.SetPosition(pools[_poolObject.PoolTag].Root.position);
-            _poolObject.SetRotation(Quaternion.identity);
-            _poolObject.SetParent(pools[_poolObject.PoolTag].Root);
+           // _poolObject.SetPosition(pools[_poolObject.PoolTag].Root.position);
+           // _poolObject.SetRotation(Quaternion.identity);
+            //_poolObject.SetParent(pools[_poolObject.PoolTag].Root);
             pools[_poolObject.PoolTag].Push(_poolObject);
         }
     }
@@ -81,6 +81,7 @@ internal class UnityPoolManager : DestroyableSingleton<UnityPoolManager>
         if (pools.ContainsKey(_poolType))
         {
             IPoolObject result = pools[_poolType].Pop() ?? ForcePop(pools[_poolType].Prefab, pools[_poolType].Root);
+            result.OnPop();
             return result;
         }
         return null;
@@ -95,7 +96,8 @@ internal class UnityPoolManager : DestroyableSingleton<UnityPoolManager>
             {
                 result = ForcePop(pools[_poolType].Prefab, pools[_poolType].Root);
                 _info = (PoolPopInfo.done|PoolPopInfo.force);
-            }          
+            }
+            result.OnPop();
             return result;
         }
         _info = PoolPopInfo.failure;
@@ -106,7 +108,6 @@ internal class UnityPoolManager : DestroyableSingleton<UnityPoolManager>
         GameObject go = Instantiate(_prefab);
         go.transform.parent = _parent;
         IPoolObject result = go.GetComponent<IPoolObject>();
-        result.OnPop();
         return result;
     }
     private GameObject CreateRoot(string _rootName)

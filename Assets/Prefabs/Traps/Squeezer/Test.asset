@@ -29,3 +29,10 @@ MonoBehaviour:
     pressCollider: {x: 3.2, y: 1.6}
     pressTrigger: {x: 3.2, y: 0.2}
     pressOffset: {x: 0, y: -0.8}
+  - beam: {fileID: 921225993888716655, guid: 2e08a64342e174a42884d30f0e43c92c, type: 3}
+    stick: {fileID: 6254070315815113675, guid: 2e08a64342e174a42884d30f0e43c92c, type: 3}
+    press: {fileID: 1761189186888057328, guid: 2e08a64342e174a42884d30f0e43c92c, type: 3}
+    stickSize: {x: 1.6, y: 1.6}
+    pressCollider: {x: 2.4, y: 2.4}
+    pressTrigger: {x: 2.4, y: 0.2}
+    pressOffset: {x: 0, y: -1.2}

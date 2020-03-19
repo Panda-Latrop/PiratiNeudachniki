@@ -14,13 +14,14 @@ public class PirateFlip : IFlip
 {
     protected bool isFlipped;
     [SerializeField]
-    protected SpriteRenderer bodySpr, weaponSpr;
-    [SerializeField]
     protected Transform weaponTr;
     protected Vector2 weaponPos, weaponFlipedPos;
+    protected IPirateDesign design;
+
     public bool IsFlipped => isFlipped;
-    public void Initialize()
+    public void Initialize(IPirateDesign _design)
     {
+        design = _design;
         weaponFlipedPos = weaponPos = weaponTr.localPosition;
         weaponFlipedPos.x *= -1;
     }
@@ -29,8 +30,8 @@ public class PirateFlip : IFlip
         if (isFlipped != _true)
         {
             isFlipped = _true;
-            bodySpr.flipX = _true;
-            weaponSpr.flipY = _true;
+            design.SetBodyFlipX(_true);
+            design.SetArmFlipY(_true);
             if (_true)
             {
                 weaponTr.localPosition = weaponFlipedPos;

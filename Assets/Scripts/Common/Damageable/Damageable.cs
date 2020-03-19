@@ -5,10 +5,6 @@ public interface IDamageableHandler
 {
     IDamageable Damageable { get; }
 }
-public interface IDeathHandler
-{
-    void OnDeath(DamageInfo _deathInfo);
-}
 public enum DamageType
 {
     physic, 
@@ -63,8 +59,10 @@ public interface IDamageable
     float MaxHealth { get; }
     TeamEnum Team { get; }
     void SetDeathHandler(Action<DamageInfo> _deathHandler);
+    void SetReviveHandler(Action _reviveHandler);
     bool Hurt(DamageInfo _damageInfo);
     void Death(DamageInfo _damageInfo);
+    void Revive();
 }
 [System.Serializable]
 public class DamageableCharacter : IDamageable
@@ -80,6 +78,7 @@ public class DamageableCharacter : IDamageable
     protected ResistanceStruct[] resists;
 
     protected event Action<DamageInfo> DeathEvent;
+    protected event Action ReviveEvent;
 
     public bool IsAlive => isAlive;
     public float Health => health;
@@ -90,7 +89,10 @@ public class DamageableCharacter : IDamageable
     {
         DeathEvent += _deathHandler;
     }
-
+    public void SetReviveHandler(Action _reviveHandler)
+    {
+        ReviveEvent += _reviveHandler;
+    }
     public virtual bool Hurt(DamageInfo _damageInfo)
     {
         float damage = _damageInfo.damage;
@@ -115,8 +117,14 @@ public class DamageableCharacter : IDamageable
         isAlive = false;
         DeathEvent?.Invoke(_damageInfo);
     }
+    public void Revive()
+    {
+        isAlive = true;
+        ReviveEvent?.Invoke();
+    }
     public void OnDestroy()
     {
         DeathEvent = null;
+        ReviveEvent = null;
     }
 }

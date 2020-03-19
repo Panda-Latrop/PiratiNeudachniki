@@ -179,6 +179,24 @@ TextureImporter:
   - first:
       213: 4022421301471482527
     second: Eff_Gore_Pir_Blood_Big_2
+  - first:
+      213: -921815995570789689
+    second: Eff_Trail_Smoke_0
+  - first:
+      213: 721374048074485811
+    second: Eff_Trail_Smoke_1
+  - first:
+      213: 2471821694797658852
+    second: Eff_Trail_Smoke_2
+  - first:
+      213: -3940826766626271853
+    second: Eff_Trail_Smoke_3
+  - first:
+      213: 7816787107246692512
+    second: Eff_Trail_Smoke_4
+  - first:
+      213: 7731630497349572372
+    second: Eff_Trail_Smoke_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1509,6 +1527,132 @@ TextureImporter:
       bones: []
       spriteID: c29aeeb89cb09184c91e34b1ff82b4e2
       internalID: 4022421301471482527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Trail_Smoke_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 192
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4e86355efb4d44780e364d37683665
+      internalID: -921815995570789689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Trail_Smoke_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 189
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60813fbd9bb8f44cb2746d22a408a3a
+      internalID: 721374048074485811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Trail_Smoke_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 187
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be11c4bd1493c0d47b26ac778887bc91
+      internalID: 2471821694797658852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Trail_Smoke_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 185
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6843edf81e3cd154096c0c2ab1884269
+      internalID: -3940826766626271853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Trail_Smoke_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 186
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716c5c2b6f9365a46bde9eb31cb5dfb8
+      internalID: 7816787107246692512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eff_Trail_Smoke_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 184
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce09f29fce5047c49ad0fbbaf6b670b7
+      internalID: 7731630497349572372
       vertices: []
       indices: 
       edges: []

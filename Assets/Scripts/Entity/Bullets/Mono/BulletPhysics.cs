@@ -17,9 +17,10 @@ public class BulletPhysics : BulletBase
             isActive = value;
             if (value)
             {
+                
                 effects.SetSpriteActive(true);
-                effects.SetImpactAction(ParticleAction.clear);
                 effects.SetTrailAction(ParticleAction.play);
+                effects.SetImpactAction(ParticleAction.clear);
             }
             else
             {

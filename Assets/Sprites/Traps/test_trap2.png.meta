@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: 9021727019234061244
     second: test_trap2_7
+  - first:
+      213: 1761189186888057328
+    second: test_trap2_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -256,7 +259,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,6 +288,27 @@ TextureImporter:
       bones: []
       spriteID: 6a2d19d06e0f7c747b3719f2a0d7600a
       internalID: 9021727019234061244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_trap2_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 207
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c188a89bbde0c4eb89fee08095be1e
+      internalID: 1761189186888057328
       vertices: []
       indices: 
       edges: []

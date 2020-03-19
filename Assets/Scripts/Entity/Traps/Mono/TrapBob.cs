@@ -55,6 +55,8 @@ public class TrapBob : BaseTrap
             design.OnGizmos((Vector3)rig.position + (Quaternion.Euler(0.0f,0.0f, movement.Angle/2.0f)*design.GetSphere().localPosition));
             design.OnGizmos((Vector3)rig.position + (Quaternion.Euler(0.0f, 0.0f, -movement.Angle / 2.0f) * design.GetSphere().localPosition));
             Gizmos.DrawSphere((Vector3)rig.position + design.GetSphere().localPosition, 0.1f);
+          
+
             if (movement.Angle < 360)
             {
                 float step = movement.Angle / 11.0f;
@@ -66,6 +68,13 @@ public class TrapBob : BaseTrap
                     Gizmos.DrawLine((Vector3)rig.position + Quaternion.Euler(0.0f, 0.0f, step * i) * start * (spherePos + sphereRadius), (Vector3)rig.position + Quaternion.Euler(0.0f, 0.0f, step * (i + 1)) * start * (spherePos + sphereRadius));
                     Gizmos.DrawLine((Vector3)rig.position + Quaternion.Euler(0.0f, 0.0f, step * i) * start * (spherePos - sphereRadius), (Vector3)rig.position + Quaternion.Euler(0.0f, 0.0f, step * (i + 1)) * start * (spherePos - sphereRadius));
                 }
+                //Gizmos.color = Color.green;
+                //for (int i = 0; i <= 16; i++)
+                //{
+                //    float angl = Mathf.Lerp(-movement.Angle / 2.0f, movement.Angle / 2.0f, movement.GetSmooth(i / 16.0f));
+                //    Gizmos.DrawWireSphere((Vector3)rig.position + Quaternion.Euler(0.0f, 0.0f, angl) * design.GetSphere().localPosition, 0.05f);
+                //}
+                //Gizmos.color = Color.red;
             }
             else
             {
@@ -86,8 +95,10 @@ public enum BobState
 public interface IBobMovement
 {
     float Angle { get; set; }
+    float CurrentTime { get; set; }
     float MoveTime { get; }
     BobState State { get; set; }
+    float GetSmooth(float _time);
 }
 [System.Serializable]
 public class BobMovement : IBobMovement
@@ -103,7 +114,8 @@ public class BobMovement : IBobMovement
 
     #region Properties
     public float Angle { get => angle; set => angle = value; }
-    public float MoveTime { get => smooth[smooth.length].time;}
+    public float CurrentTime { get => time; set => time = value; }
+    public float MoveTime { get => smooth[smooth.length - 1].time;}
     public BobState State { get => state; set => state = value; }
     #endregion
 
@@ -125,6 +137,10 @@ public class BobMovement : IBobMovement
             default:
                 break;
         }
+    }
+   public float GetSmooth(float _time)
+    {
+        return smooth.Evaluate(_time);
     }
     protected void MoveLeft()
     {
@@ -194,7 +210,7 @@ public class BobDesign : IBobDesign
     }
     public float GetSphereRadius()
     {
-        return sphere.size.x/2.0f;
+        return sphereTrigger.radius;
     }
     public void SetStickLenght(float _lenght)
     {

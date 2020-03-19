@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-
 public class PirateEntity : MonoBehaviour, IPirateCharacter
 {
     [SerializeField]
@@ -13,6 +10,10 @@ public class PirateEntity : MonoBehaviour, IPirateCharacter
     protected JumpAccelMovement movement;
     [SerializeField]
     protected PirateRotation rotation;
+    [SerializeField]
+    protected PirateDesign design;
+    [SerializeField]
+    protected PirateDeath death;
     [SerializeField]
     protected PirateFlip flip;
     [SerializeField]
@@ -31,7 +32,16 @@ public class PirateEntity : MonoBehaviour, IPirateCharacter
         rotation.IsCanRotation = false;
         shooter.IsCanShoot = false;
         movement.StopMovement();
+        death.Death(_deathInfo);
         enabled = false;
+    }
+    protected void OnRevive()
+    {
+        movement.IsCanMove = true;
+        rotation.IsCanRotation = true;
+        shooter.IsCanShoot = true;
+        death.Revive();
+        enabled = true;
     }
     [ContextMenu("Kill")]
     protected void Kill()
@@ -41,8 +51,10 @@ public class PirateEntity : MonoBehaviour, IPirateCharacter
     #region Mono 
     protected void Awake()
     {
-        damageable.SetDeathHandler(OnDeath);        
-        flip.Initialize();
+        damageable.SetDeathHandler(OnDeath);
+        damageable.SetReviveHandler(OnRevive);
+        death.Initialize(design);
+        flip.Initialize(design);
         anim.Initialize(movement);
         shooter.Initialize(damageable);
     }

@@ -25,24 +25,28 @@ public class TrapBobEditor : Editor
 
                 bob.Design.Size = EditorGUILayout.IntSlider("Size", bob.Design.Size, 0, bob.Design.GetDesign().GetSizeCount() - 1);
                 bob.Design.AppyDesign();
+                if (bob.Design.GetSphere().localPosition.y >= -bob.Design.GetSphereRadius())
+                    UpdateSphere(bob, new Vector2(0.0f, -bob.Design.GetSphereRadius()));
             }
         }
     }
     protected void CalculatePosition(TrapBob _bob, float _promotion)
     {
-        //if (_squeezer.Movement.MoveState == SqueezerMovementState.up)
-        //{
-        //    UpdatePress(_squeezer, (_squeezer.Movement.StartPoint - _squeezer.Movement.EndPoint) * _promotion + _squeezer.Movement.EndPoint);
-        //}
-        //else
-        //{
-        //    UpdatePress(_squeezer, (_squeezer.Movement.EndPoint - _squeezer.Movement.StartPoint) * _promotion + _squeezer.Movement.StartPoint);
-        //}
+        _bob.Movement.CurrentTime = -_bob.Movement.MoveTime * _promotion;
+        float angleF;
+        if (_bob.Movement.State == BobState.right)
+            angleF = Mathf.Lerp(-_bob.Movement.Angle / 2.0f, _bob.Movement.Angle / 2.0f, _bob.Movement.GetSmooth(-_bob.Movement.CurrentTime));
+        else
+            angleF = Mathf.Lerp(-_bob.Movement.Angle / 2.0f, _bob.Movement.Angle / 2.0f,1 - _bob.Movement.GetSmooth(-_bob.Movement.CurrentTime));
+        Quaternion angle = Quaternion.Euler(0.0f, 0.0f, angleF);
+        _bob.transform.rotation = angle;
+        _bob.SetRotation(angleF);
     }
     protected float CalculatePromotion(TrapBob _bob)
     {
-        float promDistance = _bob.GetRotation() + _bob.Movement.Angle / 2.0f;
-        return Mathf.Clamp(promDistance / _bob.Movement.Angle, 0.0f, 1.0f);
+        return -_bob.Movement.CurrentTime / _bob.Movement.MoveTime;
+        //float promDistance = _bob.GetRotation() + _bob.Movement.Angle / 2.0f;
+        //return Mathf.Clamp(promDistance / _bob.Movement.Angle, 0.0f, 1.0f);
     }
     protected void UpdateSphere(TrapBob _bob, Vector3 _pos)
     {

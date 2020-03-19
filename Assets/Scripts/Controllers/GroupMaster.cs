@@ -63,16 +63,17 @@ public class GroupMaster : MonoBehaviour, IGroupMaster
 
     public bool SpawnUnit(Vector2 _position, ref IPoolPirate _pirate)
     {
-        if( pirates.Count <= pirateCount)
+        if( pirates.Count < pirateCount)
         {
             PoolPopInfo ppi;
             _pirate = (UnityPoolManager.Instance.Pop(pirateTag, out ppi) as IPoolPirate);
 
-            if(ppi >= PoolPopInfo.force)
+            if (ppi >= PoolPopInfo.force)
             {
                 _pirate.SetGroupMaster(this);
-            }     
-
+            }
+            else
+                _pirate.Revive();
             _pirate.SetPosition(_position);
             _pirate.AddJumpSpeed(0.0f, parameter.jumpSpread);
             _pirate.SetWeapon(weapon);
@@ -170,7 +171,7 @@ public class GroupMaster : MonoBehaviour, IGroupMaster
 
         if (pirates.Count == 0)
         {
-            Debug.Log("All Die");
+            //Debug.Log("All Die");
             return false;
         }
         if (pirates.Count == 1)

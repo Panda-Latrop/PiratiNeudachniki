@@ -35,10 +35,10 @@ public class PoolBullet : PoolObject, IPoolBullet
     #endregion
 
     #region Mono
-    public void Start()
-    {
-        lifeCycle.Restart();
-    }
+    //public void Start()
+    //{
+    //    lifeCycle.Restart();
+    //}
     public void Update()
     {
         if (lifeCycle.IsActive)

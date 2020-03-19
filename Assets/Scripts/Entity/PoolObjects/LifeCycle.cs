@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [System.Serializable]
 public class BulletLifeCycle
 {
     public enum LifeCycleState
     {
-       life,
-       kick,
-       death,
+        life,
+        kick,
+        death,
     }
 
     protected bool isActive = true;
@@ -33,8 +34,8 @@ public class BulletLifeCycle
         {
             toPush = true;
             nextTime = Time.time + timeToPush;
-        }      
-        if(Time.time >= nextTime)
+        }
+        if (Time.time >= nextTime)
         {
             if (toPush)
             {
@@ -47,8 +48,32 @@ public class BulletLifeCycle
                 nextTime = Time.time + timeToPush;
                 return LifeCycleState.kick;
             }
-            
+
         }
         return LifeCycleState.life;
+    }
+}
+
+[System.Serializable]
+public class CharacterLifeCycle
+{
+    protected bool isActive = true;
+    [SerializeField]
+    protected float timeToPush = 1.0f;
+    protected float nextTime = 0.0f;
+
+    public bool IsActive { get => isActive; set => isActive = value; }
+    public void Restart()
+    {
+        nextTime = Time.time + timeToPush;
+        isActive = true;
+    }
+    public bool UpdateCycle()
+    {
+        if (Time.time >= nextTime)
+        {
+            return true;
+        }
+        return false;
     }
 }

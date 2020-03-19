@@ -25,6 +25,7 @@ public class TrapSqueezerEditor : Editor
 
                 squeezer.Design.Size = EditorGUILayout.IntSlider("Size", squeezer.Design.Size, 0, squeezer.Design.GetDesign().GetSizeCount() - 1);
                 squeezer.Design.AppyDesign();
+                squeezer.Movement.StartPoint = Vector2.down * squeezer.Design.GetPressSize().y/2.0f;
             }
         }
     }
